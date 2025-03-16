@@ -1,0 +1,54 @@
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { AiOutlineClose } from 'react-icons/ai';
+
+const AuthLayout = ({ children, title, subtitle, subtitleLink, subtitleLinkText }) => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      {/* Full-width header */}
+      <div className="w-full bg-white shadow-sm">
+        <div className="container mx-auto px-12 py-6 flex justify-between items-center">
+          <div className="text-2xl font-bold text-green-800">
+            <Image 
+              src="/wise-logo.svg" 
+              alt="Wise" 
+              width={100} 
+              height={30}
+              priority
+            />
+          </div>
+          <Link href="/">
+            <button className="text-gray-500 hover:text-gray-700">
+              <AiOutlineClose size={24} />
+            </button>
+          </Link>
+        </div>
+      </div>
+      
+      <div className="flex-1 flex items-center justify-center px-4 py-8">
+        <div className="w-full max-w-[550px] bg-white p-8">
+          {(title || subtitle) && (
+            <div className="text-center mb-8">
+              {title && <h1 className="text-2xl font-bold mb-2">{title}</h1>}
+              {subtitle && (
+                <p className="text-gray-600">
+                  {subtitle}{' '}
+                  {subtitleLink && subtitleLinkText && (
+                    <Link href={subtitleLink} className="text-green-800 underline font-medium">
+                      {subtitleLinkText}
+                    </Link>
+                  )}
+                </p>
+              )}
+            </div>
+          )}
+          
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AuthLayout; 
