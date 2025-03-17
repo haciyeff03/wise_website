@@ -122,7 +122,7 @@ export default function ForgotPassword() {
             </form>
             
             <div className="text-center text-gray-600">
-              Need help? Read this <Link href="/help" className="text-green-800 underline font-medium">Help Centre article.</Link>
+              Need help? Read this <Link href="/help" className="text-[#163300] underline font-medium">Help Centre article.</Link>
             </div>
           </>
         )}

@@ -61,15 +61,15 @@ export default function Register() {
   return (
     <AuthLayout>
       <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold mb-2">Create your Wise account</h1>
-        <p className="text-gray-600">
-          Already have an account? <Link href="/login" className="text-green-800 underline font-medium">Log in</Link>
+        <h1 className="text-[28px] font-[600] mb-2">Create your Wise account</h1>
+        <p className="text-[#454745]">
+          Already have an account? <Link href="/login" className="text-[#163300] underline font-medium">Log in</Link>
         </p>
       </div>
       
       <form onSubmit={handleSubmit}>
         <div className="mb-6">
-          <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+          <label htmlFor="email" className="block text-[#454745] font-medium mb-2">
             First, enter your email address
           </label>
           <input
@@ -133,7 +133,7 @@ export default function Register() {
       </div>
       
       <div className="text-center text-sm text-gray-500">
-        By registering, you accept our <Link href="/terms" className="text-green-800 underline">Terms of use</Link> and <Link href="/privacy" className="text-green-800 underline">Privacy Policy</Link>
+        By registering, you accept our <Link href="/register" className="text-[#163300] font-[600] text-[14px] underline">Terms of use</Link> and <Link href="/register" className="text-[#163300] font-[600] text-[14px] underline">Privacy Policy</Link>
       </div>
     </AuthLayout>
   );
