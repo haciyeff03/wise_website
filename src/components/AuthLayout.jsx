@@ -13,7 +13,7 @@ const AuthLayout = ({ children, title, subtitle, subtitleLink, subtitleLinkText 
           <div className="text-4xl font-bold text-green-800">
         
             <Image 
-              src="/logo.svg" 
+              src="/images/logo.svg" 
               alt="Wise" 
               width={100} 
               height={30}
