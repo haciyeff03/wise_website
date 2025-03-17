@@ -8,7 +8,7 @@ const AuthLayout = ({ children, title, subtitle, subtitleLink, subtitleLinkText 
     <div className="min-h-screen flex flex-col">
       {/* Full-width header */}
       <div className="w-full bg-white shadow-sm">
-      <div className="container mx-auto px-10 sm:px-8 md:px-6 lg:px-10 xl:px-50 py-7 flex justify-between items-center">
+      <div className="container mx-auto px-10 sm:px-8 md:px-6 lg:px-10 xl:px-50 py-9 flex justify-between items-center">
 
           <div className="text-4xl font-bold text-green-800">
         
@@ -21,7 +21,7 @@ const AuthLayout = ({ children, title, subtitle, subtitleLink, subtitleLinkText 
             />
           </div>
           <Link href="/">
-          <button className="text-[rgb(22,51,0)] hover:text-[rgb(34,77,0)]">
+          <button className="text-[rgb(22,51,0)] hover:text-[rgb(34,77,0)] cursor-pointer">
               <AiOutlineClose size={23} />
             </button>
           </Link>

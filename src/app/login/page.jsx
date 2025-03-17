@@ -119,7 +119,7 @@ export default function Login() {
         />
         
         {errors.form && (
-          <div className="mb-4 p-3 bg-red-50 text-red-500 rounded-md">
+          <div className="mb-4 p-3 bg-red-50 text-[#A8200D] rounded-md">
             {errors.form}
           </div>
         )}
@@ -135,7 +135,7 @@ export default function Login() {
           </Button>
         </div>
         
-        <div className="mt-4 text-center">
+        <div className="mt-4 font-[16px] color-[#163300] text-left">
           <a href="/forgot-password" className="text-[rgb(22,51,0)] underline font-medium">
             Trouble logging in?
           </a>
@@ -143,30 +143,33 @@ export default function Login() {
       </form>
       
       {/* Social login options */}
-      <div className="mt-8">
-        <div className="text-center text-gray-500 mb-4">Or log in with</div>
+      <div className="mt-4">
+        <div className="text-left text-gray-500 mb-4">Or log in with</div>
         
         <div className="grid grid-cols-3 gap-3">
-          <button 
-            onClick={() => handleSocialLogin('Google')}
-            className="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FcGoogle size={24} />
-          </button>
-          
-          <button 
-            onClick={() => handleSocialLogin('Facebook')}
-            className="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FaFacebook size={24} className="text-blue-600" />
-          </button>
-          
-          <button 
-            onClick={() => handleSocialLogin('Apple')}
-            className="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FaApple size={24} />
-          </button>
+                 
+<button
+  onClick={() => handleSocialSignup('Google')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#4285F4] hover:text-white transition"
+>
+  <FcGoogle size={24} className="transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
+        <button
+  onClick={() => handleSocialSignup('Facebook')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#3B5998] hover:text-white transition"
+>
+  <FaFacebook size={24} className="text-blue-600 transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
+
+<button
+  onClick={() => handleSocialSignup('Apple')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#000000] hover:text-white transition"
+>
+  <FaApple size={24} className="transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
         </div>
       </div>
     </AuthLayout>

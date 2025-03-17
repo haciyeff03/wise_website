@@ -10,7 +10,7 @@ const Button = ({
   isLoading = false,
   disabled = false
 }) => {
-  const baseStyles = "py-3 px-4 rounded-md font-medium transition-colors focus:outline-none";
+  const baseStyles = "py-3 px-4 rounded-md font-medium transition-colors focus:outline-none cursor-pointer";
   
   const variants = {
     primary: "bg-[#a6e06f] hover:bg-[#95cb60] text-black",

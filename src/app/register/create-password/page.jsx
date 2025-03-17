@@ -106,12 +106,12 @@ export default function CreatePassword() {
                 }
               }}
               className={`
-                w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-1
-                ${errors.password ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-green-500'}
+                w-full px-4 py-3 border-2 rounded-md focus:outline-none focus:ring-1
+                ${errors.password ? 'border-[#A8200D] focus:ring-[#A8200D]' : 'border-gray-300 focus:ring-green-500'}
               `}
             />
           </div>
-          {errors.password && <p className="mt-1 text-sm text-red-500">{errors.password}</p>}
+          {errors.password && <p className="mt-1 text-sm text-[#A8200D]">{errors.password}</p>}
         </div>
         
         <div className="mb-6">
@@ -129,15 +129,15 @@ export default function CreatePassword() {
               }
             }}
             className={`
-              w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-1
-              ${errors.confirmPassword ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-green-500'}
+              w-full px-4 py-3 border-2 rounded-md focus:outline-none focus:ring-1
+              ${errors.confirmPassword ? 'border-[#A8200D] focus:ring-[#A8200D]' : 'border-gray-300 focus:ring-green-500'}
             `}
           />
-          {errors.confirmPassword && <p className="mt-1 text-sm text-red-500">{errors.confirmPassword}</p>}
+          {errors.confirmPassword && <p className="mt-1 text-sm text-[#A8200D]">{errors.confirmPassword}</p>}
         </div>
         
         {errors.form && (
-          <div className="mb-4 p-3 bg-red-50 text-red-500 rounded-md">
+          <div className="mb-4 p-3 bg-red-50 text-[#A8200D] rounded-md">
             {errors.form}
           </div>
         )}

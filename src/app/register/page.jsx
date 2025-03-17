@@ -82,10 +82,10 @@ export default function Register() {
             }}
             className={`
               w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-1
-              ${error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-green-500'}
+              ${error ? 'border-[#A8200D] focus:ring-[#A8200D]' : 'border-gray-300 focus:ring-green-500'}
             `}
           />
-          {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
+          {error && <p className="mt-1 text-sm text-[#A8200D]">{error}</p>}
         </div>
         
         <div className="mb-8">
@@ -104,26 +104,31 @@ export default function Register() {
         <div className="text-center text-gray-500 mb-4">Or sign up with</div>
         
         <div className="grid grid-cols-3 gap-3">
-          <button 
-            onClick={() => handleSocialSignup('Google')}
-            className="flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FcGoogle size={24} />
-          </button>
           
-          <button 
-            onClick={() => handleSocialSignup('Facebook')}
-            className="flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FaFacebook size={24} className="text-blue-600" />
-          </button>
-          
-          <button 
-            onClick={() => handleSocialSignup('Apple')}
-            className="flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-50"
-          >
-            <FaApple size={24} />
-          </button>
+<button
+  onClick={() => handleSocialSignup('Google')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#4285F4] hover:text-white transition"
+>
+  <FcGoogle size={24} className="transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
+        <button
+  onClick={() => handleSocialSignup('Facebook')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#3B5998] hover:text-white transition"
+>
+  <FaFacebook size={24} className="text-blue-600 transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
+
+<button
+  onClick={() => handleSocialSignup('Apple')}
+  className="group flex justify-center items-center py-3 px-4 border border-gray-300 rounded-md cursor-pointer 
+             hover:bg-[#000000] hover:text-white transition"
+>
+  <FaApple size={24} className="transition group-hover:filter group-hover:brightness-0 group-hover:invert" />
+</button>
+
+
         </div>
       </div>
       
