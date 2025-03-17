@@ -136,7 +136,7 @@ export default function Login() {
         </div>
         
         <div className="mt-4 text-center">
-          <a href="/forgot-password" className="text-green-800 underline font-medium">
+          <a href="/forgot-password" className="text-[rgb(22,51,0)] underline font-medium">
             Trouble logging in?
           </a>
         </div>
