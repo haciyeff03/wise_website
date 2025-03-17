@@ -17,7 +17,7 @@ export default function Register() {
 
   const validateEmail = () => {
     if (!email) {
-      setError('Email is required');
+      setError('Please enter a valid email address');
       return false;
     } 
     
