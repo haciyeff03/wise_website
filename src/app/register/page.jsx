@@ -82,10 +82,10 @@ export default function Register() {
             }}
             className={`
               w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-1
-              ${error ? 'border-[#A8200D] focus:ring-[#A8200D]' : 'border-gray-300 focus:ring-green-500'}
+              ${error ? ' border-[#A8200D] focus:ring-[#A8200D]' : 'border-gray-300 focus:ring-green-500'}
             `}
           />
-          {error && <p className="mt-1 text-sm text-[#A8200D]">{error}</p>}
+          {error && <p className="mt-1  text-[15px] text-[#A8200D]">{error}</p>}
         </div>
         
         <div className="mb-8">
