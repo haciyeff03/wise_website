@@ -107,7 +107,7 @@ export default function Login() {
       {errors.form && (
         <div className="mb-8 py-6 px-4 bg-neutral-200 rounded-2xl flex items-start gap-3">
           <div className="flex-shrink-0 mt-1">
-            <IoIosCloseCircle className="text-[#A8200D]" size={50}/>
+            <IoIosCloseCircle className="text-[#A8200D]" size={50} />
           </div>
           <div className="flex-grow">
             <p className="text-[#2D2E2D] text-[15px] mb-1">{errors.form}</p>
@@ -115,7 +115,7 @@ export default function Login() {
               Reset password
             </Link>
           </div>
-          <button 
+          <button
             onClick={dismissError}
             className="flex-shrink-0 mt-1 text-[#454745] hover:text-[#2D2E2D] cursor-pointer"
           >
