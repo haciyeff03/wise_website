@@ -29,7 +29,7 @@ const AuthLayout = ({ children, title, subtitle, subtitleLink, subtitleLinkText 
       </div>
       
       <div className="flex-1 flex items-center justify-center px-4 py-8">
-        <div className="w-full max-w-[550px] bg-white p-8">
+        <div className="w-full max-w-[550px] bg-white p-4 sm:p-8 ">
           {(title || subtitle) && (
             <div className="text-center mb-8">
               {title && <h1 className="text-[28px] font-[600] mb-2">{title}</h1>}
